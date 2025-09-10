@@ -39,7 +39,7 @@ queen std_clone(const queen original)
     copy.name = malloc(strlen(original.name) + 1);
     if(!copy.name)
     {
-        exit(0);
+        exit(1);
     }
     strcpy(copy.name, original.name);
     copy.loc_x = original.loc_x;
